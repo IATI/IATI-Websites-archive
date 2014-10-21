@@ -1,7 +1,7 @@
 {% extends "layout_base.html" %}
 {% block site_notice %}
     {% if version == '2.01' %}
-         <div id="site-notice" style="background-color: red"><strong>This is version 2.01 of the IATI Standard. This version has been released but is not live (<a href="/upgrades/all-versions/">more info</a>). <a href="/upgrades/all-versions/">See other versions</a>.</strong></div>.
+         <div id="site-notice" style="background-color: rgb(255, 245, 0);"><strong>This is version 2.01 of the IATI Standard. This version has been released but is not live (<a href="/upgrades/all-versions/">more info</a>). <a href="/upgrades/all-versions/">See other versions</a>.</strong></div>.
     {% else %}
          <div id="site-notice" style="background-color: red"><strong>This is a development version of version {{version}} of the IATI Standard. <a href="/upgrades/all-versions/">See other versions</a>.</strong></div>
     {% endif %}
