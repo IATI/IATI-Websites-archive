@@ -25,7 +25,7 @@ cd /home/backups/dashboard-snapshot-data; git fetch:
 
 # GitHub Repositories Backup
 
-https://gist.github.com/6938886.git:
+https://gist.github.com/8c27baf2bb492bfad04615bca24bb8af.git:
   git.latest:
     - rev: master
     - target: /home/backups/backup-github/
