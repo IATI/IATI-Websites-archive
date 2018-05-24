@@ -1,8 +1,8 @@
 {% extends "layout_base.html" %}
 {% block site_notice %}
-   
+
          <div id="site-notice" style="background-color: red"><strong>This is a development version of version {{version}} of the IATI Standard. <a href="/upgrades/all-versions/">See other versions</a>.</strong></div>
- 
+
 {% endblock %}
 {% block extra_scripts %}
     <script>
@@ -12,6 +12,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-49831230-1', 'iatistandard.org');
+      ga('set', 'anonymizeIp', true);
       ga('send', 'pageview');
 
     </script>

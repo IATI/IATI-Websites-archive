@@ -18,5 +18,3 @@ iati-dashboard-dev: 83.170.85.227
 ## Datastore
 # webserver6
 iati-datastore-live: 77.92.77.148
-# webserver8
-iati-datastore-dev: 37.123.113.46
