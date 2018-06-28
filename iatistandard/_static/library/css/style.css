@@ -824,6 +824,7 @@ a.rss-header, a.rss-header:visited {
   margin: 0 auto;
 }
 #main-version-nav ul.menu-main, #main-version-nav ul.iati-family {
+  text-align: center;
   margin: 0;
   padding: 0;
   border: 0;
@@ -835,10 +836,10 @@ a.rss-header, a.rss-header:visited {
   list-style-type: none;
   margin-left: 0;
   white-space: nowrap;
-  display: inline;
-  float: left;
-  padding-left: 15%;
-  padding-right: 0;
+  display: inline-block;
+  /* float: left; */
+  padding-left: 0;
+  padding-right: 5%;
 }
 #mai-versionn-nav ul.menu-main li:first-child, #main-version-nav ul.menu-main li.first, #main-version-nav ul.iati-family li:first-child, #main-version-nav ul.iati-family li.first {
   padding-left: 0;
@@ -923,6 +924,10 @@ a.rss-header, a.rss-header:visited {
 }
 #main-version-nav ul.menu-main li:last-child a, #main-version-nav ul.menu-main li.left-adjacent a {
   background-image: none;
+}
+
+#main-version-items {
+  width: 960px;
 }
 
 #nav-breadcrumbs {
