@@ -13,9 +13,9 @@
 <![endif]-->
 
 <link rel='stylesheet' id='main-stylesheet-css'  href='105/_static/style.css' type='text/css' media='all' />
+<link href="http://styles.iatistandard.org/assets/css/screen.css" rel="stylesheet">
 <script type='text/javascript' src='_static/library/js/modernizr-2.6.1.min.js'></script>
 <script type='text/javascript' src='_static/library/js/selectivizr.min.js'></script>
-
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
 
 <!-- Open Graph Tags -->
@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="The IATI Standard" />
 <meta name="twitter:site" content="@IATI_aid" />
 <meta name="twitter:card" content="summary" />
-<link rel="Shortcut Icon" type="image/x-icon" href="_static/favicon.ico" />
+<link rel="Shortcut Icon" type="image/x-icon" href="" />
 
 <!-- Start of IATI Zendesk Widget script -->
   <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","iati.zendesk.com");
@@ -38,62 +38,106 @@
     <body class="home page page-template page-template-template-home-page-php single-author singular two-column left-sidebar">
 
 <a id="top"></a>
+<header role="banner" class="header">
+<a href="/" class="branding"><span>IATI - International Aid Transparency Initiative</span></a>
 
-    <div id="site-notice"><strong><a href="upgrades/all-versions/">Select a Version</a></strong></div>
 
-    <div id="page" class="hfeed">
-    <header id="header" role="banner">
-        <div class="header-wrapper">
-            <a id="logo" href="http://iatistandard.org">The IATI Standard</a>
+<ul class="navigation-utility">
 
-            <form role="search" id="searchform" action="/gsearch/">
-              <input type="hidden" name="ie" value="UTF-8" />
-              <input type="text" name="q" size="31" id="s" placeholder="Search IATI Standard" />
-              <input type="submit" id="searchsubmit" name="sa" value="Search" />
-            </form>
-        </div><!-- end wrapper -->
 
-        <nav id="main-nav" class="nav" role="navigation">
+          <li id="section-news" class='navigation-utility__item'><a href="">News</a></li>
 
-            <h3 class="assistive-text">Main menu</h3>
-                        <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
-            <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-            <ul class="iati-family">
-    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
-    <li class="standard"><a href="/">IATI Standard</a></li>
-    <li class="registry"><a href="http://iatiregistry.org">IATI Data</a></li>
-    <li class="community"><a href="http://discuss.iatistandard.org/t/welcome-to-iati-discuss/">IATI Community</a></li>
+
+
+          <li id="section-events" class='navigation-utility__item'><a href="">Events</a></li>
+
+
+
+          <li id="section-contact" class='navigation-utility__item'><a href="">Contact</a></li>
+
+
 </ul>
-<ul id="menu-primary-navigation" class="menu-main">
-    <!--<li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="introduction/">Introduction</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="guidance/">Guidance</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a title="Reference" href="reference/">Reference</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="upgrades/">Upgrades</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="developer/">Developers</a>
-    </li>-->
 
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="203/">Version 2.03</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="202/">Version 2.02</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="201/">Version 2.01</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page ">
-        <a href="upgrades/all-versions/">Other Versions</a>
-    </li>
-</ul>        </nav>
+
+
+
+<button role="button" class="navigation-primary-toggle" id="navigation-primary-toggle"><span>Menu</span></button>
+
+<nav class="navigation-primary" role="navigation" id="navigation-primary">
+<ul class="navigation-primary__items">
+
+
+
+        <li id="section-about" class='navigation-primary__item'><a href="">About</a></li>
+
+
+
+
+
+        <li id="section-standard" class='navigation-primary__item'><a href="">IATI Standard</a></li>
+
+
+
+
+
+        <li id="section-registry" class='navigation-primary__item'><a href="">Iati Data</a></li>
+
+
+
+
+
+        <li id="section-data" class='navigation-primary__item'><a href="">Using Data</a></li>
+
+
+
+
+
+        <li id="section-support" class='navigation-primary__item'><a href="">Guidance & Support</a></li>
+
+
+
+
+
+        <li id="section-community" class='navigation-primary__item'><a href="">Community</a></li>
+
+
+
+
+
+      <li id="section-news" class='navigation-primary__item navigation-primary__item--ss-only'><a href="">News</a></li>
+
+
+
+      <li id="section-events" class='navigation-primary__item navigation-primary__item--ss-only'><a href="">Events</a></li>
+
+
+
+      <li id="section-contact" class='navigation-primary__item navigation-primary__item--ss-only'><a href="">Contact</a></li>
+
+
+</ul>
+</nav>
+
+</header>
+
+    <div id="site-notice"><strong><a id="sub-text" href="upgrades/all-versions/">Select a Version</a></strong></div>
+        <nav id="main-version-nav" class="nav" role="navigation">
+
+          <ul id="menu-version-navigation" class="menu-main">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                  <a href="203/">Version 2.03</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                  <a href="202/">Version 2.02</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                  <a href="201/">Version 2.01</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                  <a href="upgrades/all-versions/">Other Versions</a>
+              </li>
+          </ul>
+        </nav>
 
     </div><!-- end header -->
 
@@ -106,7 +150,7 @@
 
             <div id="home-strapline">
                 <h1>IATI Standard is a technical publishing framework allowing data to be compared. This site gives detail on the standard, how to implement it and provides guidance.</h1>
-                <h2>This website provides reference material for the <a href="upgrades/all-versions/">different versions of the IATI Standard</a>. If you do not actively choose a version, the links below will take you the latest version of the Standard.</h2>
+                <h2 id="sub-text">This website provides reference material for the <a href="upgrades/all-versions/">different versions of the IATI Standard</a>. If you do not actively choose a version, the links below will take you the latest version of the Standard.</h2>
             </div>
 
 </div><!--#page-content -->

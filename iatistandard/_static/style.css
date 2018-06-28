@@ -1,7 +1,7 @@
 /*
 Theme Name:     IATI Standard Theme
 Theme URI:      http://example.com/
-Description:    Child theme for the Twenty Eleven theme 
+Description:    Child theme for the Twenty Eleven theme
 Author:         caprenter@gmail.com
 Author URI:     http://caprenter.me.uk
 Template:       twentyeleven
@@ -172,7 +172,7 @@ background: transparent url(images/page-menu-list-item-new.gif) no-repeat 0 8px;
 -webkit-appearance: radio;
 }
 
-.datastore .hentry ul li { 
+.datastore .hentry ul li {
 padding:0;
 background :none;
 }
@@ -236,20 +236,20 @@ color: #fff;
           }
 #sidebar span.collapsing.pages {
         border:0;
-        padding:0; 
-        margin:0; 
+        padding:0;
+        margin:0;
         cursor:pointer;
 }
 
 #sidebar li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
 #sidebar li.collapsing.pages a.self {background:#d6e099;
                        font-weight:bold}
-#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';} 
+#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';}
 #sidebar ul.collapsing.pages.list li.collapsing.pages {list-style-type:none}
-#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before, 
+#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before,
   #sidebar ul.collapsing.pages.list li.collapsing.pages:before {
        content:'';
-  } 
+  }
 #sidebar ul.collapsing.pages.list li.collapsing.pages .sym {
    cursor:pointer;
    font-size:1.2em;
