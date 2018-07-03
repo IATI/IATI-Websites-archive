@@ -124,6 +124,26 @@
 
 <link rel='stylesheet' id='main-stylesheet-css'  href='_static/style.css' type='text/css' media='all' />
 <link href="http://styles.iatistandard.org/assets/css/screen.css" rel="stylesheet">
+<style>
+  ul #menu-primary-navigation {
+    background-color:#1a206d;
+    width:100%;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    height:40px;
+    padding-top:10px;
+  }
+
+  ul #menu-primary-navigation li {
+    display:inline-block;
+    margin-right:40px;
+  }
+
+  ul #menu-primary-navigation li a {
+    color:white;
+  }
+</style>
 <script type='text/javascript' src='{{ pathto('_static/library/js/modernizr-2.6.1.min.js', 1) }}'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/selectivizr.min.js', 1) }}'></script>
 {{ css() }}
@@ -210,7 +230,25 @@
           </ul>
           </nav>
         </div><!-- end wrapper -->
+        <ul id="menu-primary-navigation" class="menu-main">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="introduction/">Introduction</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="guidance/">Guidance</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a title="Reference" href="reference/">Reference</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="upgrades/">Upgrades</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+            <a href="developer/">Developers</a>
+          </li>
+        </ul>
       </header>
+
     </div><!-- end header -->
 
     <div id="page-content">
@@ -348,7 +386,7 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/iati.js', 1) }}'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/common.js', 1) }}'></script>
-<script src="/assets/js/app.bundle.js"></script>
+<script src="http://styles.iatistandard.org/assets/js/app.bundle.js"></script>
     {% block extra_scripts %}{% endblock %}
     </body>
 </html>
