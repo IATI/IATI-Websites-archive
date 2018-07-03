@@ -43,11 +43,6 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
           {%- block sidebarlogo %}
-          {%- if logo %}
-            <p class="logo"><a href="{{ pathto(master_doc) }}">
-              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
-            </a></p>
-          {%- endif %}
           {%- endblock %}
           {%- if sidebars != None %}
             {#- new style sidebar: explicitly include/exclude templates #}
@@ -94,7 +89,7 @@
           href="{{ pathto('_static/opensearch.xml', 1) }}"/>
     {%- endif %}
     {%- if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    <link rel="shortcut icon" href="?"/>
     {%- endif %}
     {%- endif %}
 {%- block linktags %}
@@ -127,7 +122,32 @@
 <script src="{{ pathto('_static/html5.js', 1) }}" type="text/javascript"></script>
 <![endif]-->
 
-<link rel='stylesheet' id='main-stylesheet-css'  href='{{ pathto('_static/style.css', 1) }}' type='text/css' media='all' />
+<link rel='stylesheet' id='main-stylesheet-css'  href='_static/style.css' type='text/css' media='all' />
+<link href="http://styles.iatistandard.org/assets/css/screen.css" rel="stylesheet">
+<style>
+  ul#menu-primary-navigation {
+    background-color:#1a206d;
+    width:100%;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    height:40px;
+    padding-top:10px;
+  }
+
+  ul#menu-primary-navigation li {
+    display:inline-block;
+    margin-right:40px;
+  }
+
+  ul#menu-primary-navigation li a {
+    color:white;
+  }
+
+  #header {
+    background:none;
+  }
+</style>
 <script type='text/javascript' src='{{ pathto('_static/library/js/modernizr-2.6.1.min.js', 1) }}'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/selectivizr.min.js', 1) }}'></script>
 {{ css() }}
@@ -138,7 +158,7 @@
 <meta property="og:site_name" content="The IATI Standard" />
 <meta name="twitter:site" content="@IATI_aid" />
 <meta name="twitter:card" content="summary" />
-<link rel="Shortcut Icon" type="image/x-icon" href="{{ pathto('_static/favicon.ico', 1) }}" />
+<link rel="Shortcut Icon" type="image/x-icon" href="?" />
 
 <!-- Start of IATI Zendesk Widget script -->
   <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","iati.zendesk.com");
@@ -158,43 +178,92 @@
     <div id="page" class="hfeed">
     <header id="header" role="banner">
         <div class="header-wrapper">
-            <a id="logo" href="http://iatistandard.org">The IATI Standard</a>
+          <a href="/" class="branding"></a>
+          <ul class="navigation-utility">
 
-            <form role="search" id="searchform" action="/gsearch/">
-              <input type="hidden" name="ie" value="UTF-8" />
-              <input type="text" name="q" size="31" id="s" placeholder="Search IATI Standard" />
-              <input type="submit" id="searchsubmit" name="sa" value="Search" />
-            </form>
+
+                    <li id="section-news" class='navigation-utility__item'><a href="http://iatistandard.org/en/news/">News</a></li>
+
+
+
+                    <li id="section-events" class='navigation-utility__item'><a href="http://iatistandard.org/en/events/">Events</a></li>
+
+
+
+                    <li id="section-contact" class='navigation-utility__item'><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+
+
+          </ul>
+
+
+
+
+          <button role="button" class="navigation-primary-toggle" id="navigation-primary-toggle"><span>Menu</span></button>
+
+          <nav class="navigation-primary" role="navigation" id="navigation-primary">
+          <ul class="navigation-primary__items">
+
+
+
+                  <li id="section-about" class='navigation-primary__item'><a href="http://iatistandard.org/en/about/">About</a></li>
+
+
+
+
+
+                  <li id="section-standard" class='navigation-primary__item'><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+
+
+
+
+
+                  <li id="section-data" class='navigation-primary__item'><a href="http://iatistandard.org/en/using-data">Using IATI Data</a></li>
+
+
+
+
+
+                  <li id="section-support" class='navigation-primary__item'><a href="http://iatistandard.org/en/guidance/">Guidance & Support</a></li>
+
+
+
+
+
+                  <li id="section-community" class='navigation-primary__item'><a href="https://discuss.iatistandard.org/">Community</a></li>
+
+
+
+                  <li id="section-news" class="navigation-primary__item navigation-primary__item--ss-only"><a href="http://iatistandard.org/en/news/">News</a></li>
+
+
+
+                  <li id="section-events" class="navigation-primary__item navigation-primary__item--ss-only"><a href="http://iatistandard.org/en/events/">Events</a></li>
+
+
+
+                  <li id="section-contact" class="navigation-primary__item navigation-primary__item--ss-only"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+
+          </ul>
+          </nav>
         </div><!-- end wrapper -->
-
-        <nav id="main-nav" class="nav" role="navigation">
-
-            <h3 class="assistive-text">Main menu</h3>
-                        <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
-            <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
-            <ul class="iati-family">
-    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
-    <li class="standard"><a href="/">IATI Standard</a></li>
-    <li class="registry"><a href="http://iatiregistry.org">IATI Data</a></li>
-    <li class="community"><a href="http://discuss.iatistandard.org/t/welcome-to-iati-discuss/">IATI Community</a></li>
-</ul>
-<ul id="menu-primary-navigation" class="menu-main">
-    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('introduction') %}current-menu-item{% endif %}">
-        <a href="{{ pathto('introduction') }}">Introduction</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('guidance') %}current-menu-item{% endif %}">
-        <a href="{{ pathto('guidance') }}">Guidance</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('reference') or pagename.startswith('organisation-identifiers') or pagename.startswith('activity-standard') or pagename.startswith('organisation-standard') or pagename.startswith('codelists') or pagename.startswith('schema') %}current-menu-item{% endif %}">
-        <a title="Reference" href="{{ pathto('reference') }}">Reference</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('upgrades') %}current-menu-item{% endif %}">
-        <a href="{{ pathto('upgrades') }}">Upgrades</a>
-    </li>
-    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('developer') %}current-menu-item{% endif %}">
-        <a href="{{ pathto('developer') }}">Developers</a>
-    </li>
-</ul>        </nav>
+        <ul id="menu-primary-navigation" class="menu-main">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="introduction/">Introduction</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="guidance/">Guidance</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a title="Reference" href="reference/">Reference</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="upgrades/">Upgrades</a>
+          </li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+            <a href="developer/">Developers</a>
+          </li>
+        </ul>
+      </header>
 
     </div><!-- end header -->
 
@@ -333,6 +402,7 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/iati.js', 1) }}'></script>
 <script type='text/javascript' src='{{ pathto('_static/library/js/common.js', 1) }}'></script>
+<script src="http://styles.iatistandard.org/assets/js/app.bundle.js"></script>
     {% block extra_scripts %}{% endblock %}
     </body>
 </html>

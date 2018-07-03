@@ -818,41 +818,42 @@ a.rss-header, a.rss-header:visited {
 ----------------------------------------------- */
 /* = Main Navigation
 ----------------------------------------------- */
-#main-nav {
+#main-version-nav {
   position: relative;
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
-#main-nav ul.menu-main, #main-nav ul.iati-family {
+#main-version-nav ul.menu-main, #main-version-nav ul.iati-family {
+  text-align: center;
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
 }
-#main-nav ul.menu-main li, #main-nav ul.iati-family li {
+#main-version-nav ul.menu-main li, #main-version-nav ul.iati-family li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
   white-space: nowrap;
-  display: inline;
-  float: left;
+  display: inline-block;
+  /* float: left; */
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 5%;
 }
-#main-nav ul.menu-main li:first-child, #main-nav ul.menu-main li.first, #main-nav ul.iati-family li:first-child, #main-nav ul.iati-family li.first {
+#mai-versionn-nav ul.menu-main li:first-child, #main-version-nav ul.menu-main li.first, #main-version-nav ul.iati-family li:first-child, #main-version-nav ul.iati-family li.first {
   padding-left: 0;
 }
-#main-nav ul.menu-main li:last-child, #main-nav ul.iati-family li:last-child {
+#main-version-nav ul.menu-main li:last-child, #main-version-nav ul.iati-family li:last-child {
   padding-right: 0;
 }
-#main-nav ul.menu-main li.last, #main-nav ul.iati-family li.last {
+#main-version-nav ul.menu-main li.last, #main-version-nav ul.iati-family li.last {
   padding-right: 0;
 }
-#main-nav ul.iati-family li {
+#main-version-nav ul.iati-family li {
   width: 25%;
 }
-#main-nav ul.iati-family li a {
+#main-version-nav ul.iati-family li a {
   display: block;
   padding: 15px 0;
   font-weight: bold;
@@ -862,46 +863,46 @@ a.rss-header, a.rss-header:visited {
   text-align: center;
   text-decoration: none;
 }
-#main-nav ul.iati-family li a:hover {
+#main-version-nav ul.iati-family li a:hover {
   text-decoration: none;
 }
-#main-nav ul.iati-family li.transparency a:hover, #main-nav ul.iati-family li.standard a:hover, #main-nav ul.iati-family li.registry a:hover, #main-nav ul.iati-family li.community a:hover {
+#main-version-nav ul.iati-family li.transparency a:hover, #main-version-nav ul.iati-family li.standard a:hover, #main-version-nav ul.iati-family li.registry a:hover, #main-version-nav ul.iati-family li.community a:hover {
   background-color: white;
 }
-#main-nav ul.iati-family li.transparency a {
+#main-version-nav ul.iati-family li.transparency a {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
   background-color: #a2ad00;
 }
-#main-nav ul.iati-family li.transparency a:hover {
+#main-version-nav ul.iati-family li.transparency a:hover {
   color: #a2ad00;
 }
-#main-nav ul.iati-family li.standard a {
+#main-version-nav ul.iati-family li.standard a {
   background-color: #1a206d;
 }
-#main-nav ul.iati-family li.standard a:hover {
+#main-version-nav ul.iati-family li.standard a:hover {
   color: #1a206d;
 }
-#main-nav ul.iati-family li.registry a {
+#main-version-nav ul.iati-family li.registry a {
   background-color: #0098db;
 }
-#main-nav ul.iati-family li.registry a:hover {
+#main-version-nav ul.iati-family li.registry a:hover {
   color: #0098db;
 }
-#main-nav ul.iati-family li.community a {
+#main-version-nav ul.iati-family li.community a {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #00693c;
 }
-#main-nav ul.iati-family li.community a:hover {
+#main-version-nav ul.iati-family li.community a:hover {
   color: #00693c;
 }
-#main-nav ul.menu-main {
+#main-version-nav ul.menu-main {
   background-color: #1a206d;
 }
-#main-nav ul.menu-main li a {
+#main-version-nav ul.menu-main li a {
   display: block;
   padding: 14px 14px 14px 15px;
   color: white;
@@ -909,20 +910,24 @@ a.rss-header, a.rss-header:visited {
   line-height: 15px;
   background: transparent url(../images/dark-vertical-divider.png) no-repeat 100% 50%;
 }
-#main-nav ul.menu-main li a:hover, #main-nav ul.menu-main li a.active {
+#main-version-nav ul.menu-main li a:hover, #main-version-nav ul.menu-main li a.active {
   background: white;
   color: #1a206d;
 }
-#main-nav ul.menu-main li a:active, #main-nav ul.menu-main li a.focus {
+#main-version-nav ul.menu-main li a:active, #main-version-nav ul.menu-main li a.focus {
   background-color: white;
   color: black;
 }
-#main-nav ul.menu-main li.current-menu-item a, #main-nav ul.menu-main li.current-page-ancestor a {
+#main-version-nav ul.menu-main li.current-menu-item a, #main-version-nav ul.menu-main li.current-page-ancestor a {
   background: white;
   color: #1a206d;
 }
-#main-nav ul.menu-main li:last-child a, #main-nav ul.menu-main li.left-adjacent a {
+#main-version-nav ul.menu-main li:last-child a, #main-version-nav ul.menu-main li.left-adjacent a {
   background-image: none;
+}
+
+#main-version-items {
+  width: 960px;
 }
 
 #nav-breadcrumbs {
@@ -1651,7 +1656,8 @@ div.pagination .wp-pagenavi span.current {
   display: inline;
   width: 270px;
   height: 70px;
-  background: white url(../images/iati-logo.png) no-repeat 0 0;
+  background: white url("http://styles.iatistandard.org/assets/svg/source/logo-colour.svg") no-repeat 0 0;
+  background-size: contain;
   text-indent: -999em;
 }
 #header .header-wrapper #logo:hover {
@@ -2016,4 +2022,8 @@ div.pagination .wp-pagenavi span.current {
   text-transform: uppercase;
   color: white;
   text-decoration: none;
+}
+
+#sub-text {
+  font-size: 1.5em;
 }
