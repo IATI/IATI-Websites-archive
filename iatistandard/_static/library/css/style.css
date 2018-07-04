@@ -1651,7 +1651,8 @@ div.pagination .wp-pagenavi span.current {
   display: inline;
   width: 270px;
   height: 70px;
-  background: white url(../images/iati-logo.png) no-repeat 0 0;
+  background: white url("http://styles.iatistandard.org/assets/svg/source/logo-colour.svg") no-repeat;
+  background-size: 270px, 70px;
   text-indent: -999em;
 }
 #header .header-wrapper #logo:hover {
