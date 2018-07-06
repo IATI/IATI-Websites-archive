@@ -126,7 +126,7 @@
             var $treeContainer = $( treeContainer );
             var $tree = $treeContainer.find('ul').first();
             //Path to image assets
-            var IATIStandard = {"themePath":"http:\/\/iatistandard.org\/wp-content\/themes\/iatistandard"};
+            var IATIStandard = {"themePath":"http:\/\/reference.iatistandard.org\/wp-content\/themes\/iatistandard"};
             var toggleImgPath = IATIStandard.themePath + "/library/images/icons/arrows-theme-accent-right.png";
             var toggleImgPathOpen = IATIStandard.themePath + "/library/images/icons/arrows-theme-accent-down.png";
 
