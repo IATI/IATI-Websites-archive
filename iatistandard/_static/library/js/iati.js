@@ -125,25 +125,11 @@
 
             var $treeContainer = $( treeContainer );
             var $tree = $treeContainer.find('ul').first();
-            //Path to image assets
-            var IATIStandard = {"themePath":"http:\/\/iatistandard.org\/wp-content\/themes\/iatistandard"};
-            var toggleImgPath = IATIStandard.themePath + "/library/images/icons/arrows-theme-accent-right.png";
-            var toggleImgPathOpen = IATIStandard.themePath + "/library/images/icons/arrows-theme-accent-down.png";
 
             var toggleSubMenus = function(ele){
                 $(ele).toggle();
                 var toggle = $(ele).siblings('span.toggle');
-                changeToggleImage(toggle);
-            };
-
-            var changeToggleImage = function(ele){
-                $toggleImage = $(ele).find('img');
-                $toggleImage.toggleClass('open');
-                var updateToggleImagePath = toggleImgPath;
-                if( $toggleImage.hasClass('open') ){
-                    updateToggleImagePath = toggleImgPathOpen;
-                };
-                $toggleImage.attr('src', updateToggleImagePath );
+                $(toggle).toggleClass('open');
             };
 
             //Paint root
@@ -157,9 +143,7 @@
             //Add toggles to all li with submenus
             $tree.find('ul').each(function(i){
                 if (!$(this).hasClass('simple')) {
-                    var $toggleImage = $('<img src="' + toggleImgPath + '" alt="Click to expand"/>');
                     var $toggle = $('<span class="toggle"></span>');
-                    $toggle.prepend($toggleImage);
                     $(this).parent().prepend($toggle);
                     $(this).parent().addClass('page-has-children');
                 }
@@ -178,7 +162,7 @@
                 //Open close the child uls
                 $(this).parent().find('ul').first().toggle().toggleClass('open');
                 //change toggle images according to state..
-                changeToggleImage(this);
+                $(this).toggleClass('open');
                 return false;
             });
 

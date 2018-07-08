@@ -307,3 +307,16 @@ dt:hover > a.headerlink {
 .underline {
     text-decoration: underline;
 }
+
+aside.widget_pages span.toggle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+}
+
+aside.widget_pages span.toggle:not(.open) {
+  background: transparent url("./library/images/icons/arrows-theme-accent-right.png") no-repeat;
+}
+aside.widget_pages span.toggle.open {
+  background: transparent url("./library/images/icons/arrows-theme-accent-down.png") no-repeat;
+}
