@@ -320,3 +320,8 @@ aside.widget_pages span.toggle:not(.open) {
 aside.widget_pages span.toggle.open {
   background: transparent url("./library/images/icons/arrows-theme-accent-down.png") no-repeat;
 }
+
+tr.withdrawn {
+  color: #A0A0A0;
+  font-style: italic;
+}
