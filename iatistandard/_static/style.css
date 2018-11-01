@@ -307,3 +307,8 @@ dt:hover > a.headerlink {
 .underline {
     text-decoration: underline;
 }
+
+tr.withdrawn {
+  color: #A0A0A0;
+  font-style: italic;
+}
