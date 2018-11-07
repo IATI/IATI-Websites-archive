@@ -308,7 +308,11 @@ dt:hover > a.headerlink {
     text-decoration: underline;
 }
 
-tr.withdrawn {
+td.withdrawn, td.withdrawn ~ td {
   color: #A0A0A0;
   font-style: italic;
+}
+
+th.stub {
+  display: none;
 }
