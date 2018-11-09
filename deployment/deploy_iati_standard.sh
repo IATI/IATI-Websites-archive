@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Script to automate the deployment of the IATI Standard documentation.
-# Assumes running on webserver3 and the documentation for versions 1.04,
+# Assumes running on webserver3 and the documentation for versions 1.04,
 # 1.05, 2.01 & 2.02 are all to be regenerated.
 
 # Maintained under the `iati-bot` gist account.
@@ -59,7 +59,7 @@ for f in 2.01 2.02 2.03 1.05 1.04; do
     # Real live rolder is '/home/iatiuser/ssot/'
 
     # Make a backup version of the current site, and make the new version live
-    ssh iatiuser@reference.iatistandard.org "cd ~/ssot/;mv ${site_folder} ${site_folder}-backup-$(date +\%Y\%m\%d-\%s);mv ${site_folder}-new ${site_folder}"
+    ssh iatiuser@reference.iatistandard.org "cd ~/ssot/;rm -rf ${site_folder}.bak;mv ${site_folder} ${site_folder}.bak;mv ${site_folder}-new ${site_folder}"
 
     cd ..
 done

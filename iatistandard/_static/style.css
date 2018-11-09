@@ -308,6 +308,7 @@ dt:hover > a.headerlink {
     text-decoration: underline;
 }
 
+tbody.withdrawn > tr.row-even:first-child,
 tr.withdrawn {
   color: #A0A0A0;
   font-style: italic;
