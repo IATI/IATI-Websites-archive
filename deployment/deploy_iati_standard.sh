@@ -64,7 +64,7 @@ cd $DIRECTORY
 
 
 # Regenerate all versions of the sites, saving HTML outputs in '_build/dirhtml'
-for f in 1.04 1.05 2.01 2.02 2.03; do
+for f in 2.01 2.02 2.03; do
     cd $f
     echo -e "NOW IN FOLDER: $PWD \n\n"
 

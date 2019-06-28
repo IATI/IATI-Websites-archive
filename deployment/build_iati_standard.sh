@@ -58,7 +58,7 @@ echo -e "UPDATED DOCS & TEMPLATES \n\n"
 
 
 # Regenerate all versions of the sites, saving HTML outputs in '_build/dirhtml'
-for f in 2.01 2.02 2.03 1.05 1.04; do
+for f in 2.01 2.02 2.03; do
     cd $f
     site_folder="${f//.}"
     echo -e "NOW IN FOLDER: $PWD \n\n"
