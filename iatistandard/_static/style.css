@@ -321,7 +321,15 @@ aside.widget_pages span.toggle.open {
   background: transparent url("./library/images/icons/arrows-theme-accent-down.png") no-repeat;
 }
 
+tbody.withdrawn > tr.row-even:first-child,
 tr.withdrawn {
   color: #A0A0A0;
   font-style: italic;
 }
+
+#main-nav ul.iati-family li.standard a {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #1a206d;
+  }
