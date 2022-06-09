@@ -1,4 +1,4 @@
-IATI-Websites
+[Archived] IATI-Websites
 =============
 
 This directory is for templates, configuration and issues that relate to IATI websites generally, and don't fit into any of the more specific repositories. e.g:
